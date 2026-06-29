@@ -2,11 +2,10 @@
 title: "All of Statistics — Solutions"
 ---
 
-My worked solutions to the exercises in Larry Wasserman's
-*All of Statistics: A Concise Course in Statistical Inference*.
+My solutions to the exercises in Larry Wasserman's
+*All of Statistics: A Concise Course in Statistical Inference*, updated on a rolling basis as I work through the book.
 
-I add solutions chapter by chapter as I work through the book. Each chapter
-lives on its own page; problems are numbered to match the textbook.
+This approach is designed to help me refer back to the material for many years, so the solutions are likely more verbose than necessary, with definitions, lemmas, syntax explicitly re-stated.
 
 ## Chapters
 

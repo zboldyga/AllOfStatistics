@@ -2,9 +2,7 @@
 title: "Chapter Template & Formatting Reference"
 ---
 
-This page is a **reference, not a real chapter**. It shows every formatting
-pattern you'll need. Copy/paste blocks from the raw `template.qmd` into a new
-`chapterNN.qmd` as you work.
+This page is a **reference, not a real chapter**. These are snipetts I use to reference quarto and tex syntax. It reads as notes-to-self.
 
 To start a new chapter:
 

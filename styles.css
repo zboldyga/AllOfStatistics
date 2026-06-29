@@ -17,3 +17,10 @@ div.proof::before {
   font-weight: 600;
   margin-right: 0.4rem;
 }
+
+/* Render a cell's (folded) source below its output instead of above.
+   output-location is revealjs-only, so we reorder the cell's children. */
+.code-below .cell {
+  display: flex;
+  flex-direction: column-reverse;
+}

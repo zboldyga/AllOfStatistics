@@ -40,8 +40,10 @@ format:
     code-copy: true
     code-overflow: wrap
 
-# Keep raw .qmd execution off by default; flip to "auto" per-file if you add
-# runnable code chunks you want executed at render time.
+# Figure defaults for matplotlib output (see quarto.org/docs/computations/execution-options.html)
+fig-width: 6
+fig-height: 4
+
 execute:
   echo: true
   warning: true
