@@ -3,6 +3,8 @@
 A [Quarto](https://quarto.org) website of my worked solutions to Larry
 Wasserman's *All of Statistics*.
 
+[View Solutions](https://zboldyga.github.io/AllOfStatistics/).
+
 ## Structure
 
 - `_quarto.yml` — site config (navbar, sidebar, theme). Add each new chapter
