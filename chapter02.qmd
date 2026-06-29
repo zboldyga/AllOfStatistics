@@ -6,8 +6,7 @@ Solutions to the exercises in Chapter 2.
 
 ## Problem 1 {#sec-ch02-1}
 
-A CDF is defined as $F_X(x) = \mathbb{P}(X \le x)$, meaning it is
-right-continuous; $F(x) = F(x^+)$. Lemma 2.15 (proof in Problem 3) states
+A CDF is defined as $F_X(x) = \mathbb{P}(X \le x)$, and right-continuity is a property of CDFs; $F(x) = F(x^+)$. Lemma 2.15 (proof in Problem 3) states
 $\mathbb{P}(X = x) = F(x) - F(x^-)$. Therefore, $\mathbb{P}(X = x) = F(x^+) - F(x^-).$
 
 ## Problem 2 {#sec-ch02-2}
@@ -24,7 +23,7 @@ F(x) =
 \end{cases}
 $$
 
-Therefore, $\mathbb{P}(2 < X \le 4.8) = 0.1$ and $\mathbb{P}(2 \le X \le 4.8) = 0.2$.
+Given lemma 2.15.2, $\mathbb{P}(x < X \le y) = F(y) - F(x)$, so $\mathbb{P}(2 < X \le 4.8) = F(4.8) - F(2) = 0.2 - 0.1 = 0.1$. And $\mathbb{P}(2 \le X \le 4.8) = F(4.8) - F(2) + \mathbb{P}(X=2) = .2 - .1 + F(2) - F(2^-) = .1 + .1 = .2$.
 
 ::: {.code-below}
 ```{python}
