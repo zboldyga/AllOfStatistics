@@ -1,0 +1,144 @@
+---
+title: "Chapter Template & Formatting Reference"
+---
+
+This page is a **reference, not a real chapter**. It shows every formatting
+pattern you'll need. Copy/paste blocks from the raw `template.qmd` into a new
+`chapterNN.qmd` as you work.
+
+To start a new chapter:
+
+1. Copy `template.qmd` → `chapterNN.qmd`.
+2. Replace the YAML `title`.
+3. Add the page to the sidebar in `_quarto.yml` under `Solutions`.
+4. Keep one `##` heading per problem so the right-hand table of contents
+   tracks your progress.
+
+---
+
+## Problem 1 — inline & display math {#sec-tmpl-1}
+
+Inline math goes between single dollar signs: the estimator $\hat\theta_n$ is
+unbiased when $\mathbb{E}[\hat\theta_n] = \theta$.
+
+Display math (centered, its own line) goes between double dollar signs:
+
+$$
+\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B).
+$$
+
+A numbered, referenceable equation uses an `{#eq-...}` label:
+
+$$
+\bar X_n = \frac{1}{n} \sum_{i=1}^{n} X_i
+$$ {#eq-mean}
+
+…which you can cite later as @eq-mean.
+
+## Problem 2 — multi-line aligned derivations {#sec-tmpl-2}
+
+Use an `aligned` environment for step-by-step algebra. The `&` marks the
+alignment column; `\\` ends a line.
+
+$$
+\begin{aligned}
+\operatorname{Var}(X)
+  &= \mathbb{E}\big[(X - \mu)^2\big] \\
+  &= \mathbb{E}[X^2] - 2\mu\,\mathbb{E}[X] + \mu^2 \\
+  &= \mathbb{E}[X^2] - \mu^2.
+\end{aligned}
+$$
+
+Common symbols cheat-sheet: $\sum, \prod, \int, \infty, \partial,
+\sim, \propto, \approx, \leq, \geq, \neq, \in, \subset, \cup, \cap,
+\mid, \forall, \exists$; Greek $\alpha,\beta,\theta,\mu,\sigma,\lambda$;
+blackboard $\mathbb{R}, \mathbb{E}, \mathbb{P}, \mathbb{N}$; hats/bars
+$\hat\theta, \bar X, \tilde p$; distributions $X \sim \mathcal{N}(\mu,\sigma^2)$.
+
+## Problem 3 — writing a proof {#sec-tmpl-3}
+
+State what you're proving, then give the argument. The `{.proof}` callout is a
+clean way to set it off (the QED box is added automatically by the closing).
+
+::: {.callout-note icon=false}
+## Claim
+If $A \subseteq B$ then $\mathbb{P}(A) \le \mathbb{P}(B)$.
+:::
+
+::: {.proof}
+Write $B = A \cup (B \setminus A)$, a disjoint union. By additivity,
+$$
+\mathbb{P}(B) = \mathbb{P}(A) + \mathbb{P}(B \setminus A).
+$$
+Since $\mathbb{P}(B \setminus A) \ge 0$, we conclude $\mathbb{P}(B) \ge
+\mathbb{P}(A)$. $\blacksquare$
+:::
+
+You can also do a quick informal proof inline with a final $\square$ or
+$\blacksquare$ to mark the end.
+
+## Problem 4 — code (Python / R) {#sec-tmpl-4}
+
+Code blocks are syntax-highlighted. By default they are **shown but not run**
+(see `execute:` in `_quarto.yml`). This is fine for illustrating an approach.
+
+```python
+import numpy as np
+
+# Monte Carlo estimate of P(X + Y > 1) for X, Y ~ Uniform(0,1)
+rng = np.random.default_rng(0)
+n = 1_000_000
+x, y = rng.random(n), rng.random(n)
+print((x + y > 1).mean())   # ≈ 0.5
+```
+
+```r
+# Same idea in R
+set.seed(0)
+n <- 1e6
+x <- runif(n); y <- runif(n)
+mean(x + y > 1)   # ~0.5
+```
+
+To actually **execute** a chunk at render time and show its output, add the
+engine + label and turn execution on for that block (requires the kernel
+installed locally), e.g.:
+
+```{{python}}
+#| echo: true
+1 + 1
+```
+
+(Double braces above are just so this template displays the syntax literally;
+in a real chapter use single braces: `{python}`.)
+
+## Problem 5 — figures, tables, lists {#sec-tmpl-5}
+
+A figure with a caption:
+
+![A caption describing the plot.](images/example.png){#fig-example width=60%}
+
+…referenced as @fig-example. (Drop image files in an `images/` folder.)
+
+A small table:
+
+| $x$ | $f(x)$ |
+|----:|-------:|
+| 0   | 0.25   |
+| 1   | 0.50   |
+| 2   | 0.25   |
+
+: A probability mass function. {#tbl-pmf}
+
+An enumerated answer:
+
+1. First step.
+2. Second step.
+3. Conclusion.
+
+A callout for an answer summary:
+
+::: {.callout-tip}
+## Answer
+The final result, stated plainly so it's easy to find.
+:::

@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "All of Statistics — Solutions"
+  description: "My worked solutions to Wasserman's *All of Statistics*."
+  repo-url: https://github.com/zboldyga/AllOfStatistics
+  page-navigation: true
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: template.qmd
+        text: Template
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - section: "Solutions"
+        contents:
+          - href: index.qmd
+            text: Overview
+          - href: chapter02.qmd
+            text: "Ch 2 — Probability"
+      - section: "Reference"
+        contents:
+          - href: template.qmd
+            text: "Chapter template"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    html-math-method: mathjax
+    code-copy: true
+    code-overflow: wrap
+
+# Keep raw .qmd execution off by default; flip to "auto" per-file if you add
+# runnable code chunks you want executed at render time.
+execute:
+  echo: true
+  warning: true

@@ -1,0 +1,19 @@
+/* Slightly roomier line height for math-heavy reading */
+.quarto-title-block { margin-bottom: 1.5rem; }
+
+/* Make display equations breathe a bit */
+.quarto-document .math.display { margin: 1.1rem 0; }
+
+/* Proof callouts: subtle left rule */
+div.proof {
+  border-left: 3px solid #ccc;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: normal;
+}
+div.proof::before {
+  content: "Proof.";
+  font-style: italic;
+  font-weight: 600;
+  margin-right: 0.4rem;
+}

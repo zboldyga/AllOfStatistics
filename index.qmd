@@ -1,0 +1,29 @@
+---
+title: "All of Statistics — Solutions"
+---
+
+My worked solutions to the exercises in Larry Wasserman's
+*All of Statistics: A Concise Course in Statistical Inference*.
+
+I add solutions chapter by chapter as I work through the book. Each chapter
+lives on its own page; problems are numbered to match the textbook.
+
+## Chapters
+
+| Chapter | Topic | Status |
+|--------:|-------|--------|
+| [2](chapter02.qmd) | Probability | In progress |
+
+: {tbl-colwidths="[12,58,30]"}
+
+## How this site is organized
+
+- Each chapter is a single `.qmd` file (e.g. `chapter02.qmd`).
+- The [chapter template](template.qmd) shows the formatting conventions
+  (math, proofs, code, figures) — copy/paste from it when starting a new
+  problem or chapter.
+
+::: {.callout-note}
+Solutions are my own attempts and may contain errors. Corrections welcome via
+the repo.
+:::

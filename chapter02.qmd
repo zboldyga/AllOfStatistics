@@ -1,0 +1,93 @@
+---
+title: "Chapter 2 — Probability"
+---
+
+Solutions to the exercises in Chapter 2.
+
+> Formatting reference: see the [chapter template](template.qmd) for math,
+> proof, code, and figure patterns to copy.
+
+## Problem 1 {#sec-ch02-1}
+
+*Not yet attempted.*
+
+## Problem 2 {#sec-ch02-2}
+
+*Not yet attempted.*
+
+## Problem 3 {#sec-ch02-3}
+
+*Not yet attempted.*
+
+## Problem 4 {#sec-ch02-4}
+
+*Not yet attempted.*
+
+## Problem 5 {#sec-ch02-5}
+
+*Not yet attempted.*
+
+## Problem 6 {#sec-ch02-6}
+
+*Not yet attempted.*
+
+## Problem 7 {#sec-ch02-7}
+
+*Not yet attempted.*
+
+## Problem 8 {#sec-ch02-8}
+
+*Not yet attempted.*
+
+## Problem 9 {#sec-ch02-9}
+
+*Not yet attempted.*
+
+## Problem 10 {#sec-ch02-10}
+
+*Not yet attempted.*
+
+## Problem 11 {#sec-ch02-11}
+
+*Not yet attempted.*
+
+## Problem 12 {#sec-ch02-12}
+
+*Not yet attempted.*
+
+## Problem 13 {#sec-ch02-13}
+
+*Not yet attempted.*
+
+## Problem 14 {#sec-ch02-14}
+
+*Not yet attempted.*
+
+## Problem 15 {#sec-ch02-15}
+
+*Not yet attempted.*
+
+## Problem 16 {#sec-ch02-16}
+
+*Not yet attempted.*
+
+## Problem 17 {#sec-ch02-17}
+
+*Not yet attempted.*
+
+## Problem 18 {#sec-ch02-18}
+
+*Not yet attempted.*
+
+## Problem 19 {#sec-ch02-19}
+
+*Not yet attempted.*
+
+## Problem 20 {#sec-ch02-20}
+
+*Not yet attempted.*
+
+## Problem 21 {#sec-ch02-21}
+
+*Not yet attempted.*
+

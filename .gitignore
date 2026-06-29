@@ -1,0 +1,14 @@
+# Quarto
+/_site/
+/.quarto/
+*_files/
+*_cache/
+
+# OS / editor
+.DS_Store
+.Rproj.user/
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+
+**/*.quarto_ipynb
